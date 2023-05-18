@@ -1,0 +1,10 @@
+$colors: (
+    first: #FFFFFF,
+    second: #F77F00,
+    third: #D62828,
+    fourth: #C1121F,
+);
+
+@function color($color-name) {
+    @return map-get($map: $colors, $key: $color-name);
+}
